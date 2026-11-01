@@ -63,10 +63,11 @@ Black-box models are unacceptable in civil infrastructure assessment. This pipel
 ## 4. Execution Guide
 
 ### Dependencies
-Install the required libraries to execute the pipeline:
+It is highly recommended to run this project inside a Python virtual environment (e.g., `venv` or `conda`). Install all required dependencies using the provided `requirements.txt` file:
+
 ```bash
-pip install torch torchvision pytorch-lightning timm scikit-learn omegaconf opencv-python matplotlib grad-cam pillow
-```
+pip install -r requirements.txt
+
 
 ### Pipeline Workflow
 1.  **Configure:** Edit `config.yaml` and update the `paths` dictionary to point to your extracted Mendeley datasets.

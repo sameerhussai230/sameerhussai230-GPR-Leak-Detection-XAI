@@ -22,10 +22,15 @@ Utilities/
 GPR_data/
 
 # Generated Evaluation Diagnostics (Outputs)
-evaluation_diagnostics/
+# 1. Ignore images globally to prevent accidental tracking
 *.png
 *.jpg
 *.jpeg
+# 2. Explicitly track the evaluation_diagnostics folder and its contents
+!evaluation_diagnostics/
+!evaluation_diagnostics/*.png
+!evaluation_diagnostics/*.jpg
+!evaluation_diagnostics/*.jpeg
 
 # OS Generated Files
 .DS_Store
