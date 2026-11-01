@@ -1,0 +1,32 @@
+# ==========================================
+# GPR Pipeline Configuration
+# ==========================================
+paths:
+  # Update these two paths to your local raw data directories
+  raw_cavity: "C:/Drive_E/My_Work/GPR/GPR_data/augmented_cavities"
+  raw_intact: "C:/Drive_E/My_Work/GPR/GPR_data/augmented_intact"
+  # Workspace directories
+  processed_data: "C:/Drive_E/My_Work/GPR/project_workspace"
+  checkpoint_dir: "checkpoints"
+
+data:
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  img_size: 224
+  batch_size: 16
+  num_workers: 4
+
+model:
+  architecture: "resnet18"
+  learning_rate: 0.0001
+  weight_decay: 0.001
+  label_smoothing: 0.15
+  dropout_rate: 0.50
+
+training:
+  max_epochs: 15
+  patience: 3 # Early stopping patience
+
+evaluation:
+  mc_iterations: 50

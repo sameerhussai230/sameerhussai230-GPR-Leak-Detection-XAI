@@ -1,0 +1,32 @@
+# Environments & Cache
+gpr_env/
+venv/
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch Lightning & MLOps Logs
+lightning_logs/
+checkpoints/
+*.ckpt
+*.pth
+
+# Raw & Processed Data Folders
+augmented_cavities/
+augmented_intact/
+augmented_utilities/
+cavities/
+intact/
+Utilities/
+GPR_data/
+
+# Generated Evaluation Diagnostics (Outputs)
+evaluation_diagnostics/
+*.png
+*.jpg
+*.jpeg
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
