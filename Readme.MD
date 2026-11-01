@@ -67,7 +67,7 @@ It is highly recommended to run this project inside a Python virtual environment
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ### Pipeline Workflow
 1.  **Configure:** Edit `config.yaml` and update the `paths` dictionary to point to your extracted Mendeley datasets.
