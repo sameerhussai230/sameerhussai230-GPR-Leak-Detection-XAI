@@ -1,6 +1,5 @@
 # Deep-GPR: Explainable, Uncertainty-Aware Classification of GPR B-scans for Subsurface Leak and Cavity Detection
 
-> Research prototype on a public dataset.
 
 ## Abstract
 This repository contains a reproducible, config-driven PyTorch Lightning pipeline that classifies Ground Penetrating Radar (GPR) B-scans as *cavity / leak* or *intact soil*. An ImageNet-pretrained ResNet-18 is fine-tuned on a public GPR dataset, and two diagnostics are layered on top: **Grad-CAM** attention maps to inspect which regions drive each prediction, and **Monte Carlo Dropout** to obtain a spread of predictions for every scan. The aim is to explore trustworthy, interpretable model outputs for condition assessment of buried water infrastructure.
